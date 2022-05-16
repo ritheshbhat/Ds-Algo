@@ -3,7 +3,7 @@
 #TC: 0(N) N operations.
 #SC: 0(N) // N recursive calls stores func in stack till base condition is reached.
 
-
+#https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3&ab_channel=takeUforward
 
 def sum_of_given_num_using_recursion(num: int):
     if num == 0:
