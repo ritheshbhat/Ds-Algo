@@ -19,15 +19,9 @@ def f(arr, sum, index, temp_sum, sub_seq):
     # print("line 18 is: ", temp_sum)
     if temp_sum <= sum:
         sub_seq.append(arr[index])
-        # print("temp sum is =>", temp_sum, "index is ", index, "sub seq is", sub_seq)
-        # print("sub sequence before rec. call", sub_seq)
         f(arr, sum, index, temp_sum, sub_seq)
-        # print("temp_sum, index ",temp_sum, sub_seq)
         sub_seq.pop()
-        # print("popping the element =>", sub_seq)
-    # print("temp sum after pop ", temp_sum, sub_seq)
     temp_sum = temp_sum - arr[index]
-    # print("second recursion call", sub_seq, "index is", index+1)
     f(arr, sum, index + 1, temp_sum, sub_seq)
 
 
