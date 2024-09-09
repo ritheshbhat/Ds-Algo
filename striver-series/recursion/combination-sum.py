@@ -35,10 +35,8 @@ def solve(id, arr,target,sub_array: list,result):
         return
     if sum(sub_array)< target:
         sub_array.append(arr[id])
-        print(sub_array)
         solve(id,arr,target,sub_array, result)
         sub_array.pop()
-    print("id for not pick is",id+1)
     solve(id+1,arr,target,sub_array,result)
 
 if __name__=="__main__":
@@ -47,3 +45,4 @@ if __name__=="__main__":
     res = []
     solve(0,arr,target,[],res)
     print(res)
+

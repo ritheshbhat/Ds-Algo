@@ -24,9 +24,30 @@ Output: [[1,2,2],[5]]
 Explanation: These are the unique combinations whose sum is equal to target.
 '''
 
+
+
+# def solve(s,id,sub,res,target):
+#     if id == len(s):
+#         return
+#     if sum(sub) == target:
+#         res.append(sub[::])
+#         return res
+#
+#     for i in range(id, len(s)):
+#         if i!=id and s[id] == s[id-1]:
+#             continue
+#         if sum(sub)> target:
+#             break
+#         sub.append(id)
+#         solve(s,id+1,sub,res,target)
+#         sub.pop()
+
+
+
 def solve(id,arr,target,sub_array,result):
     if target ==0:
-        result.append(sub_array[::])
+        print(sub_array)
+        return result.append(sub_array[::])
 
     for i in range(id,len(arr)):
         if i!=id and arr[i]==arr[i-1]:
@@ -41,7 +62,7 @@ def solve(id,arr,target,sub_array,result):
 
 
 if __name__=="__main__":
-    arr = [10,1,2,7,6,1,5]
+    arr = [10,1,6,1]
     target = 8
     sub_array = []
     result = []

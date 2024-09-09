@@ -47,3 +47,5 @@ if __name__=="__main__":
 
     second_grid = [ [2,1,1] , [1,1,0] , [0,1,1] ]
     print(time_to_rot_all_oranges(second_grid))
+
+    third_grid = [[]]

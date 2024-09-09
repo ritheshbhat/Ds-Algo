@@ -23,6 +23,7 @@ def explore_nodes(i, j, visited, grid):
         #                 grid[0]) and visited[new_row][new_column] != True and grid[new_row][new_column] == "1":
         #             # print("new row and column to check", new_row, new_column)
         #
+
         #             visited[new_row][new_column] = True
         #             print("visited =>",new_row,new_column)
         #             print(visited)

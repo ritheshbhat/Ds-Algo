@@ -27,6 +27,6 @@ def kadanes(arr):
     return max_size
 
 if __name__ == "__main__":
-    arr =  [-2,1,-3,4,-1,2,1,-5,4]
+    arr =  [-2,1,-3,1,4,-1,2,1,-5,4]
     # arr = [4,-1,2,1]
     print(kadanes(arr))
